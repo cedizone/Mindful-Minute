@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Notifications">
+
+        <SwitchPreferenceCompat
+            android:key="notification_preference"
+            android:title="Receive notifications"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Appearance">
+
+        <ListPreference
+            android:key="theme_preference"
+            android:title="Theme"
+            android:defaultValue="light"
+            android:entries="@array/theme_options"
+            android:entryValues="@array/theme_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Reminders">
+
+        <EditTextPreference
+            android:key="duration_preference"
+            android:title="Duration (minutes)"
+            android:defaultValue="5"
+            android:inputType="number" />
+
+        <EditTextPreference
+            android:key="frequency_preference"
+            android:title="Frequency (hours)"
+            android:defaultValue="2"
+            android:inputType="number" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Meditation">
+
+        <ListPreference
+            android:key="exercise_preference"
+            android:title="Exercise"
+            android:defaultValue="breathing"
+            android:entries="@array/exercise_options"
+            android:entryValues="@array/exercise_values" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
+
+
